@@ -1,0 +1,212 @@
+
+/* Mise en forme generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #202c45;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 5px 30px 5px 0;
+    color: #ffb347;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+/* Accueil */
+header {
+    background-color: #ffe5d9;
+    text-align: center;
+    padding: 35px 20px 42px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+button {
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+/* Titres */
+.titre {
+    text-align: center;
+    margin: 25px 0;
+    color: #202c45;
+    font-size: 20px;
+}
+
+/* Produits */
+.produits {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 0 12px;
+}
+
+.box {
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.box img {
+    max-width: 100%;
+    height: 20px;
+}
+
+.box h3 {
+    color: #202c45;
+    font-size: 16px;
+}
+
+.box p {
+    color: orangered;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Categories */
+.categories {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 10px 20px;
+    border-left: 4px solid coral;
+}
+
+.categories ul {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Tableau */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 14px;
+}
+
+th {
+    background-color: #202c45;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Formulaire */
+form {
+    width: 60%;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 45px;
+}
+
+form button {
+    display: block;
+    margin: 5px auto 0;
+}
+
+/* Pied de page */
+footer {
+    background-color: #202c45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Adaptation aux telephones */
+@media screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .produits {
+        flex-direction: column;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    .categories {
+        width: 80%;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
